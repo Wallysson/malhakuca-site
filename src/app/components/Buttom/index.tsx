@@ -4,10 +4,11 @@ type ButtonProps = {
   size?: "small" | "medium" | "large";
   variant?: "default" | "active" | "disabled";
   onClick?: () => void;
+  className?: string;
   children: React.ReactNode;
 };
 
-export function Button({ size, variant, onClick, children }: ButtonProps) {
+export function Button({ size, variant, onClick, className, children }: ButtonProps) {
   let sizeClass;
   switch (size) {
     case "small":
@@ -41,7 +42,7 @@ export function Button({ size, variant, onClick, children }: ButtonProps) {
   return (
     <button
       type="button"
-      className={`${sizeClass} ${variantClass} shadow-md`}
+      className={`${sizeClass} ${variantClass} shadow-md ${className}`}
       onClick={onClick}
       disabled={variant === "disabled"}
     >

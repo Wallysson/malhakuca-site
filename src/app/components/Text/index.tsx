@@ -15,7 +15,9 @@ type TextProps = {
     | "h5-bold"
     | "h5-normal"
     | "h5-light"
-    | "h6-bold";
+    | "h6-bold"
+    | "title"
+    | "paragraph";
   variant?: "default" | "secondary" | "disabled" | "neutral";
   children: React.ReactNode;
 };
@@ -39,7 +41,9 @@ export function Text({
     "text-h5-normal": size === "h5-normal",
     "text-h5-light": size === "h5-light",
     "text-h6-bold": size === "h6-bold",
-    "text-gray-700": variant === "default",
+    "text-h3-bold md:text-h1-bold": size === "title",
+    "text-base md:text-h4-normal": size === "paragraph",
+    "text-neutral-800": variant === "default",
     "text-secondary-500": variant === "secondary",
     "text-neutral-100": variant === "neutral",
 
