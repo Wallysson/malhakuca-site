@@ -11,21 +11,15 @@ export function Hero() {
       }}
     >
       <div className="flex flex-col lg:flex-row justify-center items-center text-center gap-4 px-4 lg:text-left">
-        <div className="flex flex-col lg:flex-row justify-center items-center lg:order-2" >
-          <Image
+        <div className="flex flex-col lg:flex-row justify-center items-center lg:order-2 lg:w-80" >
+          <img
             src="/mk1.png"
             alt="Figura"
-            width={142}
-            height={190}
-            className="mb-4 object-fill bg-red-500" 
-            sizes="(max-width: 768px) 1200px,
-            (max-width: 1024px) 50vw,
-            33vw"
-            
+            className="w-full h-full object-cover"
             // sizes="(min-width: 768px) 204px, 270px, (min-width: 1024px) 303px 405px"
             />
         </div>
-        <div className="flex flex-col justify-center items-center lg:order-1 max-w-lg lg:items-start gap-4">
+        <div className="flex flex-col justify-center items-center lg:order-1 lg:max-w-lg lg:items-start gap-4">
           <Text
             size="title"
             children={"Instituto Acadêmico Malhakuca"}
