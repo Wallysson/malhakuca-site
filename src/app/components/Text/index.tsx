@@ -37,7 +37,7 @@ export function Text({
     "text-h3-normal": size === "h3-normal",
     "text-h4-extrabold": size === "h4-extrabold",
     "text-h4-bold": size === "h4-bold",
-    "text-h4-normal": size === "h4-normal",
+    "text-h4-normal text-center": size === "h4-normal",
     "text-h5-bold": size === "h5-bold",
     "text-h5-normal": size === "h5-normal",
     "text-h5-light": size === "h5-light",
@@ -51,5 +51,5 @@ export function Text({
     "text-gray-400": variant === "disabled",
   });
 
-  return <p className={className}>{children}</p>;
+  return <span className={className}>{children}</span>;
 }
