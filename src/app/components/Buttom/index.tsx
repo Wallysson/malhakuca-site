@@ -36,7 +36,7 @@ export function Button({ size, variant, onClick, className, children }: ButtonPr
       variantClass = "bg-secondary-700 text-neutral-100 cursor-not-allowed";
       break;
     default:
-      variantClass = "bg-secondary-500 text-neutral-100";
+      variantClass = "bg-primary-800 text-neutral-100";
   }
 
   return (

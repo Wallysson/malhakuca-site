@@ -18,6 +18,7 @@ type TextProps = {
     | "h6-bold"
     | "title"
     | "subTitle"
+    | "titleContact"
     | "paragraph";
   variant?: "default" | "secondary" | "disabled" | "neutral";
   children: React.ReactNode;
@@ -44,6 +45,7 @@ export function Text({
     "text-h6-bold": size === "h6-bold",
     "text-h3-bold md:text-h1-bold": size === "title",
     "text-h4-bold md:text-h2-bold": size === "subTitle",
+    "text-h4-bold md:text-h3-bold": size === "titleContact",
     "text-base md:text-h5-paragraph lg:text-h4-paragraph": size === "paragraph",
     "text-neutral-800": variant === "default",
     "text-secondary-500": variant === "secondary",
