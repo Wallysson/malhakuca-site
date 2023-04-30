@@ -28,7 +28,7 @@ export function Challenges() {
           />
         </div>
       </div>
-      <div className="w-full px-4 container ">
+      <div className="w-full  ">
         <Form />
       </div>
     </section>

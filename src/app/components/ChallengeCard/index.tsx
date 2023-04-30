@@ -1,5 +1,4 @@
 import { Text } from "../Text";
-import Balance from "react-wrap-balancer";
 
 type ChallengeCardProps = {
   title: string;

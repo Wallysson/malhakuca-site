@@ -3,27 +3,27 @@ import { Text } from "./Text";
 
 export function About() {
   return (
-      <section className="flex flex-col items-center justify-center w-full py-16 my-16 px-4 lg:flex-row lg:gap-20 container mx-auto ">
-        <div className="grid grid-cols-2 grid-rows-2 h-screen max-w-screen-lg gap-4 max-h-[227px] md:max-h-[280px] md:max-w-md lg:w-auto lg:h-600 lg:max-w-6xl mb-6">
+      <section className="flex flex-col h-screen items-center justify-center w-full px-4 lg:flex-row lg:gap-20 container mx-auto">
+        <div className="grid grid-cols-2 grid-rows-2 max-w-screen-lg gap-4 max-h-[227px] md:max-h-[280px] lg:max-h-[438px]  lg:max-w-6xl mb-6">
           <div className="col-span-1 row-span-2 bg-red-50 w-full">
             <img
               src="about-1.png"
               alt="feature image 2"
-              className="w-full h-full object-fit"
+              className="w-full h-full object-fit lg:max-w-xs"
             />
           </div>
           <div>
             <img
               src="about-2.png"
               alt="feature image 2 "
-              className="w-full h-full object-fit"
+              className="w-full h-full object-fit lg:max-w-xs"
             />
           </div>
           <div>
             <img
               src="about-3.png"
               alt="feature image 2"
-              className="w-full h-full object-fit"
+              className="w-full h-full object-fit lg:max-w-xs"
             />
           </div>
         </div>

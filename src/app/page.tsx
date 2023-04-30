@@ -1,17 +1,9 @@
-import { About } from "./components/About";
-import { Challenges } from "./components/Challenges";
-import { Footer } from "./components/Footer";
-import { Goals } from "./components/Goals";
-import { Hero } from "./components/Hero";
+import Initial from "./pages/Home";
 
 export default function Home() {
   return (
     <>
-      <Hero />
-      <About />
-      <Goals />
-      <Challenges />
-      <Footer />
+      <Initial />
     </>
   );
 }

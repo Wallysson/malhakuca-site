@@ -11,11 +11,11 @@ export function Hero() {
       }}
     >
       <div className="flex flex-col lg:flex-row justify-center items-center text-center gap-4 px-4 lg:text-left">
-        <div className="flex flex-col lg:flex-row justify-center items-center lg:order-2 lg:w-80" >
+        <div className="flex flex-col w-full lg:flex-row justify-center items-center lg:order-2 lg:w-80" >
           <img
             src="/mk1.png"
             alt="Figura"
-            className="w-full h-full object-cover"
+            className="max-w-[9rem] max-h-44 md:max-w-[12.5rem] md:max-h-72 lg:max-w-[18.5rem] lg:max-h-[23.5rem] object-cover"
             // sizes="(min-width: 768px) 204px, 270px, (min-width: 1024px) 303px 405px"
             />
         </div>
