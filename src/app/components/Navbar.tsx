@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import { X, Menu } from "react-feather";
 import { Button } from "./Buttom";
 import { Text } from "./Text";
+import Link from "next/link";
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -37,43 +38,51 @@ const Navbar: React.FC = () => {
           <ul className="flex flex-col justify-center items-center md:flex-row md:space-x-6 md:py-0 h-full">
             <li className="py-2 md:py-0">
               <a href="#" className="block md:hidden ">
-                <Text size="h5-bold" children={"Início"} variant="neutral" />
+                <Link href="/">
+                  <Text size="h5-bold" children={"Início"} variant="neutral" />
+                </Link>
               </a>
             </li>
             <li className="py-2 md:py-0">
-              <a href="#" className=" md:hidden ">
+              <Link href="history" className=" md:hidden">
                 <Text
                   size="h5-normal"
                   children={"História"}
                   variant="neutral"
                 />
-              </a>
+              </Link>
             </li>
             <li className="py-2 md:py-0">
-              <a href="#" className=" md:hidden ">
+              <Link href="bumeranguedesign" className=" md:hidden">
                 <Text
                   size="h5-normal"
                   children={"Bumeranguedesign"}
                   variant="neutral"
                 />
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
       )}
       <div className="md:flex items-center justify-between md:gap-4 lg:gap-14 hidden">
-        <a href="#">
+        <Link href="#">
           <Image src="/logo-inam2.png" alt="Logo" width={72} height={56} />
-        </a>
-        <a href="#" className="hidden md:block text-white font-bold text-xl">
+        </Link>
+        <Link href="/" className="hidden md:block text-white font-bold text-xl">
           <Text size="h4-bold" children={"Início"} />
-        </a>
-        <a href="#" className="hidden md:block text-white font-bold text-xl">
+        </Link>
+        <Link
+          href="/historia"
+          className="hidden md:block text-white font-bold text-xl"
+        >
           <Text size="h4-normal" children={"História"} />
-        </a>
-        <a href="#" className="hidden md:block text-white font-bold text-xl">
+        </Link>
+        <Link
+          href="bumeranguedesign"
+          className="hidden md:block text-white font-bold text-xl"
+        >
           <Text size="h4-normal" children={"Bumeranguedesign"} />
-        </a>
+        </Link>
       </div>
       <div className="text-white font-bold text-xl hidden md:block">
         <Button

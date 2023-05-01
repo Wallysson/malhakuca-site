@@ -1,12 +1,6 @@
+import { Footer } from "./components/Footer";
 import Navbar from "./components/Navbar";
 import "./styles/global.css";
-
-import { Inter } from 'next/font/google'
-
-const inter = Inter({
-  subsets: ['latin'],
-  variable: '--font-inter',
-})
 
 export const metadata = {
   title: "Malhakuca",
@@ -26,6 +20,7 @@ export default function RootLayout({
         </header>
 
         {children}
+        <Footer />
       </body>
     </html>
   );

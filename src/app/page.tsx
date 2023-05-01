@@ -1,4 +1,4 @@
-import Initial from "./pages/Home";
+import Initial from "./pages/Initial";
 
 export default function Home() {
   return (
