@@ -2,7 +2,7 @@ import { Text } from "@/app/components/Text";
 
 export function AboutBume() {
   return (
-    <section className="flex flex-col items-center justify-center w-full h-full md:px-4 lg:flex-row lg:gap-20 md:container md:mx-auto py-6 md:py-32 lg:py-48">
+    <section className="flex flex-col items-center justify-center w-full h-full md:px-4 lg:flex-row lg:gap-20 md:container md:mx-auto py-6 md:py-32">
       <div className="flex lg:order-2 ">
         <img
           src="about-4.png"

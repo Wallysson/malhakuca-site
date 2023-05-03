@@ -1,13 +1,19 @@
 import { AboutBume } from "./components/AboutBume";
+import { Crowdfunding } from "./components/Crowdfunding";
+import { Guiness } from "./components/Guiness";
 import { Hero } from "./components/Hero";
-import { Revelance } from "./components/Revelance";
+import { Relevance } from "./components/Relevance";
+import { Wave } from "./components/Wave";
 
 export default function BumerangueDesign() {
     return (
       <>
         <Hero />
         <AboutBume />
-        <Revelance />
+        <Wave />
+        <Relevance />
+        <Guiness />
+        <Crowdfunding />
       </>
     );
   }

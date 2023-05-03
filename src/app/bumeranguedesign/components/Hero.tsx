@@ -10,14 +10,16 @@ export function Hero() {
       }}
     >
       <div className="flex flex-col lg:flex-row justify-center items-center text-center gap-4 px-4 lg:text-left">
-        <div className="flex flex-col w-full lg:flex-row justify-center items-center lg:order-2 lg:w-80">
-          <img
+        <div className="flex flex-col w-full lg:flex-row justify-center items-center lg:w-80">
+          <Image
             src="/boolmerang.png"
             alt="Figura"
-            className="max-w-[9rem] max-h-44 md:max-w-[12.5rem] md:max-h-72 lg:max-w-[18.5rem] lg:max-h-[23.5rem] object-cover"
+            width={80}
+            height={80}
+            className="md:w-[12.5rem] md:h-[12.75rem]"
           />
         </div>
-        <div className="flex flex-col justify-center items-center lg:order-1 lg:max-w-lg lg:items-start gap-4">
+        <div className="flex flex-col justify-center items-center  lg:max-w-lg lg:items-start gap-4">
           <Text
             size="title"
             children={"O bumeranguedesign como instrumento de emancipação"}

@@ -5,7 +5,7 @@ import { Text } from "./Text";
 export function Donate() {
   return (
     <section className="py-16 flex flex-col  justify-center mx-auto w-full px-4 container lg:flex-row lg:items-center lg:gap-32">
-      <div className="flex flex-col gap-8 w-full  order-2 mt-9 lg:order-1 lg:max-w-md">
+      <div className="flex flex-col gap-8 w-full order-2 mt-9 lg:order-1 lg:w-1/3">
         <Button size="large" className="h-16" variant="default">
           <Text children="Doar R$ 20,00" size="h6-bold" variant="neutral" />
         </Button>
@@ -23,7 +23,7 @@ export function Donate() {
           />
         </Button>
       </div>
-      <div className="flex flex-col   lg:max-w-3xl order-1 lg:order-2">
+      <div className="flex flex-col   lg:w-1/3 order-1 lg:order-2">
         <div className="flex flex-col  justify-center gap-7">
           <Text size="subTitle" children={"Faça parte desse projeto"} />
           <Text

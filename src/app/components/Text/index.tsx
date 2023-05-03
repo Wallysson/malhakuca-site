@@ -20,6 +20,7 @@ type TextProps = {
     | "subTitle"
     | "titleDonate"
     | "titleRelevant"
+    | "subTitleCenter"
     | "titleContact"
     | "paragraph";
   variant?: "default" | "secondary" | "disabled" | "neutral";
@@ -46,7 +47,8 @@ export function Text({
     "text-h5-light": size === "h5-light",
     "text-h6-bold": size === "h6-bold",
     "text-h3-bold md:text-h1-bold": size === "title",
-    "text-h4-bold md:text-h2-bold": size === "subTitle",
+    "text-h4-bold text-center md:text-h2-bold": size === "subTitleCenter",
+    "text-h4-bold  md:text-h2-bold": size === "subTitle",
     "text-h4-bold md:text-h3-bold": size === "titleContact",
     "text-h5-bold md:text-h4-bold lg:text-2-bold": size === "titleDonate",
     "text-h6-bold md:text-h4-bold": size === "titleRelevant",
