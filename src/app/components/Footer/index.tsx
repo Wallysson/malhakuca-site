@@ -8,11 +8,9 @@ export function Footer() {
       <div className="container mx-auto px-4 flex flex-col items-center justify-center">
         <div className="flex flex-col items-center justify-center gap-4">
           <Image src="/logo-inam1.png" alt="Logo" width={114} height={88} />
-          <Text
-            children="Instituto Acadêmico Malhakuca"
-            size="h6-bold"
-            variant="neutral"
-          />
+          <Text size="h6-bold" variant="neutral">
+            Instituto Acadêmico Malhakuca
+          </Text>
         </div>
         <div className="flex flex-col mt-9">
           <div className="flex flex-col gap-8 md:grid md:grid-cols-2 md:col-start-1 lg:flex lg:flex-row">

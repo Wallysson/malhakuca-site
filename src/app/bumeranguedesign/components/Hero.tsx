@@ -20,18 +20,17 @@ export function Hero() {
           />
         </div>
         <div className="flex flex-col justify-center items-center  lg:max-w-lg lg:items-start gap-4">
-          <Text
-            size="title"
-            children={"O bumeranguedesign como instrumento de emancipação"}
-            variant="default"
-          />
-          <Text
-            size="paragraph"
-            variant="default"
-            children={
-              "Incentivando à prática de esporte e lazer em conjunto com a educação ecológica de reutilização de material cartonado nas oficinas de confecção e prática de Bumerangue  Sustentável ( lei n. 12.305/10 PNRS). O aluno aprende a fazer o bumerangue ecológico, podendo brincar, ensinar a fazer e brincar e até vender para auferir renda própria."
-            }
-          />
+          <Text size="title" variant="default">
+            O bumeranguedesign como instrumento de emancipação
+          </Text>
+          <Text size="paragraph" variant="default">
+            Incentivando à prática de esporte e lazer em conjunto com a educação
+            ecológica de reutilização de material cartonado nas oficinas de
+            confecção e prática de Bumerangue Sustentável ( lei n. 12.305/10
+            PNRS). O aluno aprende a fazer o bumerangue ecológico, podendo
+            brincar, ensinar a fazer e brincar e até vender para auferir renda
+            própria.
+          </Text>
         </div>
       </div>
 

@@ -7,14 +7,15 @@ export function Goals() {
     <section className="bg-primary-600 ">
       <div className="flex flex-col items-center justify-center w-full py-16 my-16 px-4 container mx-auto ">
         <div className="flex flex-col items-center justify-center gap-12 text-center lg:max-w-4xl lg:order-1">
-          <Text size="subTitle" children={"Nossa meta"} variant="neutral" />
-          <Text
-            size="paragraph"
-            children={
-              "Oferecer espaços culturais, de esporte e lazer para crainças e adolescentes, buscando minimizar as carências da periferia e contribuir para o desenvolvimento pleno e harmônico de suas potencialidades e aptidões"
-            }
-            variant="neutral"
-          />
+          <Text size="subTitle" variant="neutral">
+            Nossa meta
+          </Text>
+          <Text size="paragraph" variant="neutral">
+            Oferecer espaços culturais, de esporte e lazer para crainças e
+            adolescentes, buscando minimizar as carências da periferia e
+            contribuir para o desenvolvimento pleno e harmônico de suas
+            potencialidades e aptidões
+          </Text>
         </div>
         <div className="flex flex-col items-center justify-center gap-10 lg:flex-row lg:max-w-6xl lg:order-3">
           <Card
@@ -34,7 +35,9 @@ export function Goals() {
           />
         </div>
         <div className="mt-6 lg:order-2">
-          <Button variant="active" size="small" children={"seja voluntário"} />
+          <Button variant="active" size="small">
+            seja voluntário
+          </Button>
         </div>
       </div>
     </section>

@@ -14,17 +14,20 @@ export function Guiness() {
             height={140}
             className="md:w-[16.5rem] md:h-[13.125rem] "
           />
-          <Text
-            size="subTitle"
-            children={"Campanha para o Guinnes World Records"}
-          />
-          <Text
-            size="paragraph"
-            children={
-              "Convidamos todas as escolas, empresas e pessoas de Jacarei e do Vale do Paraiba a participarem dos cursos, campeonatos e eventos de bumerangue de cartonados para colaborar em nossa campanha de angariar fundos na modalidade maior bumeranguedesigner de cartonado do mundo."
-            }
-          />
-          <Button children={"contato"} variant="default" className="md:px-[3.5rem] md:text-h4-bold md:py-2"/>
+          <Text size="subTitle">Campanha para o Guinnes World Records</Text>
+          <Text size="paragraph">
+            Convidamos todas as escolas, empresas e pessoas de Jacarei e do Vale
+            do Paraiba a participarem dos cursos, campeonatos e eventos de
+            bumerangue de cartonados para colaborar em nossa campanha de
+            angariar fundos na modalidade maior bumeranguedesigner de cartonado
+            do mundo.
+          </Text>
+          <Button
+            variant="default"
+            className="md:px-[3.5rem] md:text-h4-bold md:py-2"
+          >
+            contato
+          </Button>
         </div>
       </div>
     </section>

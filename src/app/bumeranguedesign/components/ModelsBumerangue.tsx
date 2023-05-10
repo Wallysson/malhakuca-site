@@ -8,7 +8,7 @@ export function ModelsBumerangue() {
     <section className="flex flex-col items-center">
       <div className="flex flex-col items-center justify-center w-full py-16 px-4 container mx-auto">
         <div className="flex flex-col items-center justify-center gap-8 lg:max-w-2xl text-center ">
-          <Text size="subTitle" children={"Modelos de bumerang"} />
+          <Text size="subTitle">Modelos de bumerang</Text>
 
           <div>
             <BumerangueList />

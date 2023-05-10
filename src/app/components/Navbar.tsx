@@ -24,11 +24,15 @@ const Navbar: React.FC = () => {
           <a href="#">
             <div className="flex items-center justify-center gap-2">
               <Image src="/logo-inam2.png" alt="Logo" width={32} height={24} />
-              <Text size="h5-bold" children={"INAM"} variant="secondary" />
+              <Text size="h5-bold" variant="secondary">
+                INAM
+              </Text>
             </div>
           </a>
         </div>
-        <Button size="small" variant="default" children="Doe" />
+        <Button size="small" variant="default">
+          Doe
+        </Button>
       </div>
       {isMenuOpen && (
         <div className="fixed inset-0 px-4 py-4 md:static md:inset-y-0 md:flex md:items-center md:justify-end bg-secondary-500 h-screen">
@@ -39,26 +43,24 @@ const Navbar: React.FC = () => {
             <li className="py-2 md:py-0">
               <a href="#" className="block md:hidden ">
                 <Link href="/">
-                  <Text size="h5-bold" children={"Início"} variant="neutral" />
+                  <Text size="h5-bold" variant="neutral">
+                    Início
+                  </Text>
                 </Link>
               </a>
             </li>
             <li className="py-2 md:py-0">
               <Link href="history" className=" md:hidden">
-                <Text
-                  size="h5-normal"
-                  children={"História"}
-                  variant="neutral"
-                />
+                <Text size="h5-normal" variant="neutral">
+                  História
+                </Text>
               </Link>
             </li>
             <li className="py-2 md:py-0">
               <Link href="bumeranguedesign" className=" md:hidden">
-                <Text
-                  size="h5-normal"
-                  children={"Bumeranguedesign"}
-                  variant="neutral"
-                />
+                <Text size="h5-normal" variant="neutral">
+                  Bumeranguedesign
+                </Text>
               </Link>
             </li>
           </ul>
@@ -69,28 +71,25 @@ const Navbar: React.FC = () => {
           <Image src="/logo-inam2.png" alt="Logo" width={72} height={56} />
         </Link>
         <Link href="/" className="hidden md:block text-white font-bold text-xl">
-          <Text size="h4-bold" children={"Início"} />
+          <Text size="h4-bold">Início</Text>
         </Link>
         <Link
           href="/historia"
           className="hidden md:block text-white font-bold text-xl"
         >
-          <Text size="h4-normal" children={"História"} />
+          <Text size="h4-normal">História</Text>
         </Link>
         <Link
           href="bumeranguedesign"
           className="hidden md:block text-white font-bold text-xl"
         >
-          <Text size="h4-normal" children={"Bumeranguedesign"} />
+          <Text size="h4-normal">Bumeranguedesign</Text>
         </Link>
       </div>
       <div className="text-white font-bold text-xl hidden md:block">
-        <Button
-          size="medium"
-          variant="default"
-          onClick={() => {}}
-          children={"Doe agora"}
-        />
+        <Button size="medium" variant="default" onClick={() => {}}>
+          Doe agora
+        </Button>
       </div>
     </nav>
   );

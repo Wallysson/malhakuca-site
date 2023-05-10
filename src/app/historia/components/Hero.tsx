@@ -12,31 +12,28 @@ export function Hero() {
     >
       <div className="flex flex-col lg:flex-row justify-center items-center text-center gap-4 lg:text-left">
         <div className="flex flex-col w-full lg:flex-row justify-center items-center lg:order-2">
-        <img
-          src="hero-2.png"
-          alt="feature image 2"
-          className="w-full lg:max-w-xs md:hidden"
-        />
-        <img
-          src="hero-2Tablet.png"
-          alt="feature image 2"
-          className="object-contain hidden md:block px-4"
-        />
+          <img
+            src="hero-2.png"
+            alt="feature image 2"
+            className="w-full lg:max-w-xs md:hidden"
+          />
+          <img
+            src="hero-2Tablet.png"
+            alt="feature image 2"
+            className="object-contain hidden md:block px-4"
+          />
         </div>
         <div className="flex flex-col justify-center items-center lg:max-w-lg lg:items-start gap-4">
-          <Text
-            size="title"
-            children={"Descobrindo o INAM"}
-            variant="default"
-          />
-          <Text
-            size="paragraph"
-            variant="default"
-            children={
-              "O Instituo Acadêmico Malhakuca (INAM) é uma organização que vêm fazendo a diferença ao lango dos anos."
-            }
-          />
-          <Button size="small" children='Saiba mais' variant="default"/>
+          <Text size="title" variant="default">
+            Descobrindo o INAM
+          </Text>
+          <Text size="paragraph" variant="default">
+            O Instituo Acadêmico Malhakuca (INAM) é uma organização que vêm
+            fazendo a diferença ao lango dos anos.
+          </Text>
+          <Button size="small" variant="default">
+            saiba mais
+          </Button>
         </div>
       </div>
 

@@ -29,21 +29,22 @@ export function About() {
       </div>
 
       <div className="flex flex-col justify-center items-center lg:order-1 max-w-lg lg:items-start gap-4 mt-6 lg:mt-0 text-center lg:text-left w-full lg:w-auto">
-        <Text size="subTitle" children={"Sobre o INAM"} variant="default" />
+        <Text size="subTitle" variant="default">
+          Sobre o INAM
+        </Text>
 
-        <Text
-          size="paragraph"
-          variant="default"
-          children={
-            "O Instituto Acadêmico Malhakuca tem como missão educar a comunidade, especialmente as crianças, através do fomento ao ensino de xadrez, bumerangue de cartonado e atividades culturais."
-          }
-        />
+        <Text size="paragraph" variant="default">
+          O Instituto Acadêmico Malhakuca tem como missão educar a comunidade,
+          especialmente as crianças, através do fomento ao ensino de xadrez,
+          bumerangue de cartonado e atividades culturais.
+        </Text>
         <Button
           variant="default"
           size="small"
-          children={"conheça a história"}
           className="md:px-[3.5rem] md:text-h4-bold md:py-2"
-        />
+        >
+          conheça a história
+        </Button>
       </div>
     </section>
   );

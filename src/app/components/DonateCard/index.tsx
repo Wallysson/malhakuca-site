@@ -24,7 +24,7 @@ export function DonateCard({ description }: DonateCardProps) {
         </div>
 
         <div className="flex flex-col items-start gap-3 lg:w-3/4">
-          <Text size="paragraph" children={description} />
+          <Text size="paragraph">{description}</Text>
         </div>
       </div>
     </div>

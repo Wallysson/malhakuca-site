@@ -24,8 +24,9 @@ export function BenefitCard({ title }: BenefitCardProps) {
         </div>
 
         <div className="flex flex-col items-start gap-3 lg:w-3/4">
-          <Text size="titleRelevant" children={title} variant="neutral"/>
-
+          <Text size="titleRelevant" variant="neutral">
+            {title}
+          </Text>
         </div>
       </div>
     </div>

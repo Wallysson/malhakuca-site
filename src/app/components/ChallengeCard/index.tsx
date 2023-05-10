@@ -25,9 +25,9 @@ export function ChallengeCard({ title, description }: ChallengeCardProps) {
         </div>
 
         <div className="flex flex-col items-start gap-3 lg:w-3/4">
-          <Text size="h4-normal" children={title} />
+          <Text size="h4-normal">{title}</Text>
 
-          <Text size="paragraph" children={description} />
+          <Text size="paragraph">{description}</Text>
         </div>
       </div>
     </div>

@@ -17,14 +17,16 @@ export function AboutBume() {
       </div>
 
       <div className="flex flex-col justify-center items-center max-w-lg lg:items-start gap-8 mt-14 lg:mt-0 text-center lg:text-left w-full lg:w-auto container px-4 md:px-0">
-        <Text size="subTitle" children={"Sobre a proposta"} variant="default" />
-        <Text
-          size="paragraph"
-          children={
-            "É um trabalho inovador em pesquisa, ensino e criação de milhares de designs de bumerangues de papel cartão provenientes da reutilização de embalagens cartonadas de produtos como caixas de leite longa vida, caixas de cereal, engradados cartonados de cerveja de lata, caixas de panetone, etc..."
-          }
-          variant="default"
-        />
+        <Text size="subTitle" variant="default">
+          Sobre a proposta
+        </Text>
+        <Text size="paragraph" variant="default">
+          É um trabalho inovador em pesquisa, ensino e criação de milhares de
+          designs de bumerangues de papel cartão provenientes da reutilização de
+          embalagens cartonadas de produtos como caixas de leite longa vida,
+          caixas de cereal, engradados cartonados de cerveja de lata, caixas de
+          panetone, etc...
+        </Text>
       </div>
     </section>
   );
