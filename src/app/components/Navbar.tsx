@@ -14,8 +14,12 @@ const Navbar: React.FC = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
-    <nav className="flex justify-between items-center px-4 py-4 md:px-6 lg:px-14 ">
+    <nav className="flex justify-between items-center px-4 py-4 md:px-6 lg:px-14">
       <div className="md:hidden flex justify-between w-full">
         <div className="flex items-center gap-4">
           <button className=" text-white" onClick={toggleMenu}>
@@ -35,14 +39,14 @@ const Navbar: React.FC = () => {
         </Button>
       </div>
       {isMenuOpen && (
-        <div className="fixed inset-0 px-4 py-4 md:static md:inset-y-0 md:flex md:items-center md:justify-end bg-secondary-500 h-screen">
+        <div className="fixed inset-0 px-4 py-4 md:static md:inset-y-0 md:flex md:items-center md:justify-end bg-secondary-500 h-full md:h-auto vh-100 md:vh-auto z-50">
           <button className="md:hidden text-neutral-50" onClick={toggleMenu}>
             <X size={36} />
           </button>
           <ul className="flex flex-col justify-center items-center md:flex-row md:space-x-6 md:py-0 h-full">
             <li className="py-2 md:py-0">
               <a href="#" className="block md:hidden ">
-                <Link href="/">
+                <Link href="/" onClick={closeMenu}>
                   <Text size="h5-bold" variant="neutral">
                     Início
                   </Text>
@@ -50,14 +54,14 @@ const Navbar: React.FC = () => {
               </a>
             </li>
             <li className="py-2 md:py-0">
-              <Link href="history" className=" md:hidden">
+              <Link href="historia" className=" md:hidden" onClick={closeMenu}>
                 <Text size="h5-normal" variant="neutral">
                   História
                 </Text>
               </Link>
             </li>
             <li className="py-2 md:py-0">
-              <Link href="bumeranguedesign" className=" md:hidden">
+              <Link href="bumeranguedesign" className=" md:hidden" onClick={closeMenu}>
                 <Text size="h5-normal" variant="neutral">
                   Bumeranguedesign
                 </Text>
