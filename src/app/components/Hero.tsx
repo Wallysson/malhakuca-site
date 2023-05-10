@@ -5,7 +5,7 @@ import { Button } from "./Buttom";
 export function Hero() {
   return (
     <section
-      className="relative h-screen flex items-center justify-center bg-center bg-no-repeat bg-cover bg-black, opacity-90"
+      className="relative py-36 flex items-center justify-center bg-center bg-no-repeat bg-cover bg-black, opacity-90"
       style={{
         backgroundImage: `url('/logo-limpo-inam1.png')`,
       }}

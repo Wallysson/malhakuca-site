@@ -5,7 +5,7 @@ import Image from "next/image";
 export function Guiness() {
   return (
     <section className="flex flex-col items-center">
-      <div className="flex flex-col items-center justify-center w-full py-32 px-4 container mx-auto">
+      <div className="flex flex-col items-center justify-center w-full py-16 px-4 container mx-auto">
         <div className="flex flex-col items-center justify-center gap-8 lg:max-w-2xl text-center ">
           <Image
             src="/guinness-logo.png"

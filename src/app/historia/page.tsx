@@ -1,7 +1,17 @@
-export default function History() {
+import { Hero } from "./components/Hero";
+import { TriangleLeft } from "../bumeranguedesign/components/TriangleLeft";
+import { FounderSection } from "./components/FounderSection";
+import { TriangleRight } from "../bumeranguedesign/components/TriangleRight";
+import { FutureSection } from "./components/FutureSection";
+
+export default function Historia() {
   return (
-    <div>
-      <h1>History</h1>
-    </div>
+    <>
+      <Hero />
+      <TriangleLeft />
+      <FounderSection />
+      <TriangleRight />
+      <FutureSection />
+    </>
   );
 }
