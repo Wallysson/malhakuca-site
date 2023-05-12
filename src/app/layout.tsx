@@ -1,3 +1,4 @@
+import ScrollToTopButton from "./components/FabButton";
 import { Footer } from "./components/Footer";
 import Navbar from "./components/Navbar";
 import "./styles/global.css";
@@ -20,6 +21,7 @@ export default function RootLayout({
         </header>
 
         {children}
+        <ScrollToTopButton />
         <Footer />
       </body>
     </html>

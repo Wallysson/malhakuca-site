@@ -25,7 +25,7 @@ export function Goals() {
             descriptionTwo="Aprimoramento da memória e concentração."
           />
           <Card
-            title="Bumerangue de cartonato"
+            title="Bumerangue de cartonado"
             descriptionOne="Incentivo à prática recreativa e esportiva."
             descriptionTwo="Aprimoramento da memória e concentração."
           />
