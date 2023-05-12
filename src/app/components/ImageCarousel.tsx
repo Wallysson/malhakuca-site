@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { IMAGE_CAROUSEL } from "../helpers/image-carousel";
@@ -50,7 +49,7 @@ export default function ImageCarousel() {
         {IMAGE_CAROUSEL.map((image, index) => (
           <div
             key={index}
-            className="carousel-item flex flex-col md:flex-row border-l-8 border-b-4 border-r border-t-2 border-secondary-500 rounded-3xl overflow-hidden min-h-[28rem] gap-2"
+            className="carousel-item flex flex-col md:flex-row border-l-[12px] border-b-8 border-4 border-t-2  border-secondary-500 rounded-3xl overflow-hidden min-h-[28rem] gap-2"
           >
             <img src={image.src} alt={image.alt} className="md:w-3/5" />
             <div className="flex flex-col gap-1 md:w-2/5 px-2">
