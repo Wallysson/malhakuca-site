@@ -21,7 +21,7 @@ export default function ImageCarousel() {
     },
   };
   return (
-    <section className="relative py-16 px-4 container mx-auto max-w-4xl">
+    <section className="relative py-16 px-4 container mx-auto max-w-4xl" id="slider">
       <div className="text-center mb-14">
         <Text size="subTitleCenter">Um pouco mais sobre a nossa história</Text>
       </div>

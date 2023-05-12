@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Text } from "./Text";
 import { Button } from "./Buttom";
+import Link from "next/link";
 
 export function Hero() {
   return (
@@ -26,9 +27,15 @@ export function Hero() {
             Há mais de 30 anos trabalhando para o desenvolvimento intelectual e
             manual da comunidade, especialmente do público infantil.
           </Text>
-          <Button variant="default" size="small">
-            descubra
-          </Button>
+          <Link href="bumeranguedesign#about-bumerangue">
+            <Button
+              variant="default"
+              size="small"
+              className="md:px-[3.5rem] md:text-h4-bold md:py-2"
+            >
+              descubra
+            </Button>
+          </Link>
         </div>
       </div>
 

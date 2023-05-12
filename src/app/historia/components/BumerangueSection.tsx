@@ -1,5 +1,6 @@
 import { Button } from "@/app/components/Buttom";
 import { Text } from "@/app/components/Text";
+import Link from "next/link";
 
 export default function BumerangueSection() {
   return (
@@ -18,15 +19,17 @@ export default function BumerangueSection() {
             O bumeranguedesign
           </Text>
           <Text size="paragraph" variant="default">
-            Além do xadrez, o INAM tambpem possui um projeto especial de prática
+            Além do xadrez, o INAM também possui um projeto especial de prática
             esportiva com o bumerangue de papel cartão.
           </Text>
-          <Button
-            variant="default"
-            className="md:px-[3.5rem] md:text-h4-bold md:py-2"
-          >
-            veja os detalhes
-          </Button>
+          <Link href="bumeranguedesign#modelos-bumerangue">
+            <Button
+              variant="default"
+              className="md:px-[3.5rem] md:text-h4-bold md:py-2"
+            >
+              veja os detalhes
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

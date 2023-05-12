@@ -5,7 +5,7 @@ import { BumerangueList } from "./BumerangueList";
 
 export function ModelsBumerangue() {
   return (
-    <section className="flex flex-col items-center">
+    <section className="flex flex-col items-center" id="modelos-bumerangue">
       <div className="flex flex-col items-center justify-center w-full py-16 px-4 container mx-auto">
         <div className="flex flex-col items-center justify-center gap-8 lg:max-w-2xl text-center ">
           <Text size="subTitle">Modelos de bumerang</Text>

@@ -1,5 +1,6 @@
 import { Button } from "@/app/components/Buttom";
 import { Text } from "@/app/components/Text";
+import Link from "next/link";
 
 export function Crowdfunding() {
   return (
@@ -12,12 +13,14 @@ export function Crowdfunding() {
             bumerangudesign sustentável do país, com coautoria internacional
             entre Brasil, Alemanha e França.
           </Text>
-          <Button
-            variant="default"
-            className="md:px-[3.5rem] md:text-h4-bold md:py-2"
-          >
-            ajude
-          </Button>
+          <Link href="#donate">
+            <Button
+              variant="default"
+              className="md:px-[3.5rem] md:text-h4-bold md:py-2"
+            >
+              ajude
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

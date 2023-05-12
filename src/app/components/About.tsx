@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Button } from "./Buttom";
 import { Text } from "./Text";
 
@@ -38,13 +39,15 @@ export function About() {
           especialmente as crianças, através do fomento ao ensino de xadrez,
           bumerangue de cartonado e atividades culturais.
         </Text>
-        <Button
-          variant="default"
-          size="small"
-          className="md:px-[3.5rem] md:text-h4-bold md:py-2"
-        >
-          conheça a história
-        </Button>
+        <Link href="historia">
+          <Button
+            variant="default"
+            size="small"
+            className="md:px-[3.5rem] md:text-h4-bold md:py-2"
+          >
+            conheça a história
+          </Button>
+        </Link>
       </div>
     </section>
   );

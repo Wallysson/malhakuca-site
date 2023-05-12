@@ -1,6 +1,7 @@
 import { Button } from "@/app/components/Buttom";
 import { Text } from "@/app/components/Text";
 import Image from "next/image";
+import Link from "next/link";
 
 export function Guiness() {
   return (
@@ -22,12 +23,15 @@ export function Guiness() {
             angariar fundos na modalidade maior bumeranguedesigner de cartonado
             do mundo.
           </Text>
+          <Link href="#contato">
           <Button
             variant="default"
             className="md:px-[3.5rem] md:text-h4-bold md:py-2"
           >
             contato
           </Button>
+          </Link>
+
         </div>
       </div>
     </section>

@@ -34,9 +34,11 @@ const Navbar: React.FC = () => {
             </div>
           </a>
         </div>
-        <Button size="small" variant="default">
-          Doe
-        </Button>
+        <Link href="#donate">
+          <Button size="small" variant="default">
+            Doe
+          </Button>
+        </Link>
       </div>
       {isMenuOpen && (
         <div className="fixed inset-0 px-4 py-4 md:static md:inset-y-0 md:flex md:items-center md:justify-end bg-secondary-500 h-full md:h-auto vh-100 md:vh-auto z-50">
@@ -61,7 +63,11 @@ const Navbar: React.FC = () => {
               </Link>
             </li>
             <li className="py-2 md:py-0">
-              <Link href="bumeranguedesign" className=" md:hidden" onClick={closeMenu}>
+              <Link
+                href="bumeranguedesign"
+                className=" md:hidden"
+                onClick={closeMenu}
+              >
                 <Text size="h5-normal" variant="neutral">
                   Bumeranguedesign
                 </Text>
@@ -91,9 +97,11 @@ const Navbar: React.FC = () => {
         </Link>
       </div>
       <div className="text-white font-bold text-xl hidden md:block">
-        <Button size="medium" variant="default" onClick={() => {}}>
-          Doe agora
-        </Button>
+        <Link href="#donate">
+          <Button size="medium" variant="default" onClick={() => {}}>
+            Doe agora
+          </Button>
+        </Link>
       </div>
     </nav>
   );

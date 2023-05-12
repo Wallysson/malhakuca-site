@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Button } from "./Buttom";
 import { Card } from "./Card";
 import { Text } from "./Text";
@@ -35,9 +36,15 @@ export function Goals() {
           />
         </div>
         <div className="mt-6 lg:order-2">
-          <Button variant="active" size="small">
-            seja voluntário
-          </Button>
+          <Link href="#contato">
+            <Button
+              variant="active"
+              size="small"
+              className="md:px-[3.5rem] md:text-h4-bold md:py-2"
+            >
+              seja voluntário
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

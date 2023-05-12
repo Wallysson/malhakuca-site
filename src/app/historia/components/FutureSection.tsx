@@ -1,5 +1,6 @@
 import { Button } from "@/app/components/Buttom";
 import { Text } from "@/app/components/Text";
+import Link from "next/link";
 
 export default function FutureSection() {
   return (
@@ -17,12 +18,14 @@ export default function FutureSection() {
             construção cultural dentro da comunidade. Para isso, é fundamental
             que a sociade também faça parte desse processo.
           </Text>
-          <Button
-            variant="default"
-            className="md:px-[3.5rem] md:text-h4-bold md:py-2"
-          >
-            doe
-          </Button>
+          <Link href="#donate">
+            <Button
+              variant="default"
+              className="md:px-[3.5rem] md:text-h4-bold md:py-2"
+            >
+              doe
+            </Button>
+          </Link>
         </div>
         <img
           src="boolmerang.png"

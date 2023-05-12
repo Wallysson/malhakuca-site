@@ -1,6 +1,7 @@
 import { Button } from "@/app/components/Buttom";
 import { Text } from "@/app/components/Text";
 import Image from "next/image";
+import Link from "next/link";
 
 export function Hero() {
   return (
@@ -31,9 +32,15 @@ export function Hero() {
             O Instituo Acadêmico Malhakuca (INAM) é uma organização que vêm
             fazendo a diferença ao lango dos anos.
           </Text>
-          <Button size="small" variant="default">
-            saiba mais
-          </Button>
+          <Link href="historia#slider">
+            <Button
+              size="small"
+              variant="default"
+              className="md:px-[3.5rem] md:text-h4-bold md:py-2"
+            >
+              saiba mais
+            </Button>
+          </Link>
         </div>
       </div>
 

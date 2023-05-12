@@ -4,7 +4,7 @@ import { Text } from "./Text";
 
 export function Challenges() {
   return (
-    <section className="pb-16 flex flex-col items-center justify-center mx-auto w-full px-4 container lg:flex-row lg:gap-1">
+    <section className="pb-16 flex flex-col items-center justify-center mx-auto w-full px-4 container lg:flex-row lg:gap-1" id="contato">
       <div className="flex flex-col items-center justify-center lg:w-1/3 ">
         <div className="flex flex-col items-center justify-start gap-16 mt-12 ">
           <Text size="subTitle" variant="default">
