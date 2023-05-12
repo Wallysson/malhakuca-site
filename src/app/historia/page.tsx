@@ -1,20 +1,19 @@
 import { Hero } from "./components/Hero";
 import { TriangleLeft } from "../bumeranguedesign/components/TriangleLeft";
 import { TriangleRight } from "../bumeranguedesign/components/TriangleRight";
-// import Carousel from "./components/Carousel";
 import FounderSection from "./components/FounderSection";
 import FutureSection from "./components/FutureSection";
-import { IMAGE_CAROUSEL } from "../helpers/image-carousel";
+import ImageCarousel from "../components/ImageCarousel";
 
 export default function Historia() {
   return (
-    <>
+    <div>
       <Hero />
-      {/* <Carousel images={IMAGE_CAROUSEL}/> */}
+      <ImageCarousel />
       <TriangleLeft />
       <FounderSection />
       <TriangleRight />
       <FutureSection />
-    </>
+    </div>
   );
 }
