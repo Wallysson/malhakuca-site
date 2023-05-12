@@ -53,7 +53,7 @@ export const IMAGE_CAROUSEL = [
     alt: "José com as crianças jogando bumerangue.",
     title: "2019",
     description:
-      "Atuamos em várias escolas de Jacareí com a oficina de bumerangue de cartonato",
+      "Atuamos em várias escolas de Jacareí com a oficina de bumerangue de cartonado",
   },
   {
     src: "/carousel-9.png",
