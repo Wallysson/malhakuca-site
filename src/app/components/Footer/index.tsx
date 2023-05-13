@@ -27,7 +27,7 @@ export function Footer() {
             <SocialMedia
               iconSrc="/facebook.svg"
               alt="logo-facebook"
-              description="Bumereciclado"
+              description="Academiamalhakuca"
             />
             <SocialMedia
               iconSrc="/whatsapp.svg"
