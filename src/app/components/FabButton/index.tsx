@@ -37,6 +37,7 @@ export default function ScrollToTopButton() {
 
   return (
     <button
+      key="scroll-to-top-button"
       className={`fixed bottom-4 right-4 z-10 rounded-full bg-secondary-500 text-white p-3 transition-opacity ${
         showButton ? "opacity-100" : "opacity-0"
       }`}
