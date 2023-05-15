@@ -65,7 +65,7 @@ export default function DonateModal({
       <ToastContainer transition={Flip} />
 
       <DialogOverlay className="fixed inset-0 bg-black opacity-80 z-10" />
-      <DialogContent className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-neutral-100 rounded-md shadow-lg z-20 p-8 ">
+      <DialogContent className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-neutral-100 rounded-md shadow-lg z-20 p-8 md:max-w-md overflow-y-auto w-screen h-screen md:h-fit" >
         <div className="flex flex-col items-center justify-center gap-4 text-center ">
           <DialogTitle>
             <Text size="h4-bold">

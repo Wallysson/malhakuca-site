@@ -17,7 +17,7 @@ export function Donate() {
 
   return (
     <section
-      className="py-16 flex flex-col  justify-center mx-auto w-full px-4 container lg:flex-row lg:items-center lg:gap-32"
+      className="py-16 flex flex-col justify-center mx-auto w-full px-4 container lg:flex-row lg:items-center lg:gap-32"
       id="donate"
     >
       <div className="flex flex-col gap-8 w-full order-2 mt-9 lg:order-1 lg:w-1/3">
