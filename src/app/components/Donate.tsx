@@ -1,27 +1,57 @@
+"use client";
+
+import { useState } from "react";
 import { Button } from "./Buttom";
 import { DonateCard } from "./DonateCard";
 import { Text } from "./Text";
+import DonateModal from "./DonateModal";
 
 export function Donate() {
+  const [showModal, setShowModal] = useState(false);
+  const [value, setValue] = useState(0);
+
+  const handleOpenModal = (value: number) => {
+    setValue(value);
+    setShowModal(true);
+  };
+
   return (
-    <section className="py-16 flex flex-col  justify-center mx-auto w-full px-4 container lg:flex-row lg:items-center lg:gap-32" id="donate">
+    <section
+      className="py-16 flex flex-col  justify-center mx-auto w-full px-4 container lg:flex-row lg:items-center lg:gap-32"
+      id="donate"
+    >
       <div className="flex flex-col gap-8 w-full order-2 mt-9 lg:order-1 lg:w-1/3">
-        <Button size="large" className="h-16" variant="default">
+        <Button
+          size="large"
+          className="h-16"
+          variant="default"
+          onClick={() => handleOpenModal(20)}
+        >
           <Text size="h6-bold" variant="neutral">
             Doar R$ 20,00
           </Text>
         </Button>
-        <Button size="large" className="h-16" variant="default">
+        <Button
+          size="large"
+          className="h-16"
+          variant="default"
+          onClick={() => handleOpenModal(50)}
+        >
           <Text size="h6-bold" variant="neutral">
             Doar R$ 50,00
           </Text>
         </Button>
-        <Button size="large" className="h-16" variant="default">
+        <Button
+          size="large"
+          className="h-16"
+          variant="default"
+          onClick={() => handleOpenModal(100)}
+        >
           <Text size="h6-bold" variant="neutral">
             Doar R$ 100,00
           </Text>
         </Button>
-        <Button size="large" className="h-16" variant="default">
+        <Button size="large" className="h-16" variant="default" onClick={() => handleOpenModal(0)}>
           <Text size="h6-bold" variant="neutral">
             Doar qualquer valor
           </Text>
@@ -43,6 +73,12 @@ export function Donate() {
           <DonateCard description="Dedução de impostos" />
         </div>
       </div>
+
+      <DonateModal
+        showModal={showModal}
+        setShowModal={setShowModal}
+        value={value}
+      />
     </section>
   );
 }

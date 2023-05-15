@@ -6,9 +6,10 @@ type ButtonProps = {
   onClick?: () => void;
   className?: string;
   children: React.ReactNode;
+  disabled?: boolean;
 };
 
-export function Button({ size, variant, onClick, className, children }: ButtonProps) {
+export function Button({ size, variant, onClick, className, children, ...rest }: ButtonProps) {
   let sizeClass;
   switch (size) {
     case "small":
@@ -45,6 +46,8 @@ export function Button({ size, variant, onClick, className, children }: ButtonPr
       className={`${sizeClass} ${variantClass} shadow-md ${className}`}
       onClick={onClick}
       disabled={variant === "disabled"}
+      {...rest}
+
     >
       {children}
     </button>
