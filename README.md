@@ -24,3 +24,9 @@ O site em questão é um projeto beneficente que visa ajudar o Instituto Acadêm
 - Exibição dos projetos e atividades educacionais oferecidos pelo Instituto;
 - Possibilidade de doação financeira para apoiar o trabalho do Instituto;
 - Compartilhamento fácil do site e de suas informações em redes sociais.
+
+## 🖼️ License
+
+This project is licensed under the MIT license. 
+
+Made with ♥ by Wallysson Lima. 
