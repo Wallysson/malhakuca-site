@@ -65,7 +65,7 @@ export default function DonateModal({
       <ToastContainer transition={Flip} />
 
       <DialogOverlay className="fixed inset-0 bg-black opacity-80 z-10" />
-      <DialogContent className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-neutral-100 rounded-md shadow-lg z-20 p-8 md:max-w-md overflow-y-auto w-screen h-screen md:h-fit" >
+      <DialogContent className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-neutral-100 rounded-md shadow-lg z-20 px-2 py-12 md:max-w-md overflow-y-auto w-screen h-screen md:h-fit" >
         <div className="flex flex-col items-center justify-center gap-4 text-center ">
           <DialogTitle>
             <Text size="h4-bold">
@@ -84,7 +84,7 @@ export default function DonateModal({
             className="absolute top-2 right-2 cursor-pointer"
             onClick={() => setShowModal(false)}
           >
-            <X size={32} />
+            <X size={24} />
           </DialogClose>
           <div className="flex flex-col items-center gap-4">
             <Text size="h5-bold">Use o QR Code do Pix para pagar</Text>
@@ -94,14 +94,14 @@ export default function DonateModal({
               cole o código de QR Code.
             </Text>
             <img src="/qr-code.svg" alt="QR Code" className="w-48 h-48" />
+            <div className="flex flex-col gap-4 text-start">
             <Button
               size="medium"
               onClick={handleCopyToClipboardQrCode}
               disabled={isCopping}
             >
-              Copiar código do QR Code
+              Copiar código
             </Button>
-            <div className="flex flex-col gap-2 text-start">
               <div>
                 <span className="font-medium">Chave Pix: </span>
                 <span>chavepix@exemplo.com.br</span>
@@ -122,9 +122,16 @@ export default function DonateModal({
                 <span className="font-medium">Identificador: </span>
                 <span>1234567890</span>
               </div>
+        <Button
+              size="medium"
+              onClick={() => setShowModal(false)}
+              disabled={isCopping}
+            >
+              Fechar
+            </Button>
             </div>
-          </div>
         </div>
+          </div>
       </DialogContent>
     </Dialog>
   );
