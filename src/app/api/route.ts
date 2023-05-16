@@ -2,6 +2,7 @@ import type { NextApiRequest, NextApiResponse } from "next";
 import { z } from "zod";
 import dotenv from "dotenv";
 import nodemailer from "nodemailer";
+import { NextResponse } from "next/server";
 
 dotenv.config();
 
@@ -12,19 +13,14 @@ const schema = z.object({
 
 type ContactFormData = z.infer<typeof schema>;
 
-export default async (req: NextApiRequest, res: NextApiResponse) => {
-  if (req.method !== "POST") {
-    return res.status(405).end();
-  }
-
-  const { name, message } = req.body as ContactFormData;
-
-  console.log(name, message);
+export async function POST (request: Request) {
+  const body = await request.json()
+  const { name, message } = body as ContactFormData;
 
   try {
     schema.parse({ name, message });
   } catch (error) {
-    return res.status(400).json({ error: (error as Error).message });
+    return NextResponse.json({ error: (error as Error).message });
   }
 
   const transporter = nodemailer.createTransport({
@@ -44,11 +40,10 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
       subject: "Contato pelo site",
       html: `<p>Nome: ${name}</p> <p>Mensagem: ${message}</p>`,
     });
-    return res.status(200).json({ message: "E-mail enviado com sucesso!" });
+    return NextResponse.json({ message: "E-mail enviado com sucesso!" });
   } catch (error) {
     console.error(error);
-    return res
-      .status(500)
+    return NextResponse
       .json({ error: "Ocorreu um erro ao enviar o e-mail" });
   }
 };

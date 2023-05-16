@@ -27,9 +27,10 @@ export function ContactForm() {
   } = useForm<ContactFormData>();
 
   const onSubmit = async (data: ContactFormData) => {
+    console.log(data)
     setSubmitting(true);
     try {
-      await axios.post("/api/send-email", data);
+      await axios.post("api", data);
       reset();
       toast.success("Mensagem enviada com sucesso!", {
         icon: "📨",
