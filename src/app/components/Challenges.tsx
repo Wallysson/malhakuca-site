@@ -1,5 +1,5 @@
 import { ChallengeCard } from "./ChallengeCard";
-import { Form } from "./Form";
+import { ContactForm } from "./ContactForm";
 import { Text } from "./Text";
 
 export function Challenges() {
@@ -25,7 +25,7 @@ export function Challenges() {
         </div>
       </div>
       <div className="w-full lg:w-1/3 ">
-        <Form />
+        <ContactForm />
       </div>
     </section>
   );
