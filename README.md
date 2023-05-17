@@ -34,6 +34,28 @@ O site em questão é um projeto beneficente que visa ajudar o Instituto Acadêm
 - Formulário de contato para envio de mensagens ao Instituto, com envio de email utilizando a biblioteca Nodemailer;
 - Compartilhamento fácil do site e de suas informações em redes sociais.
 
+## 🖼️ Previews
+
+### Web
+
+| Home Malhakuca                  | Modal Donate                     |
+| ------------------------------- | -------------------------------- |
+| <img src="/home-desktop.png" /> | <img src="/modal-desktop.png" /> |
+
+| Slide                            | Chess Section                    |
+| -------------------------------- | -------------------------------- |
+| <img src="/slide-desktop.png" /> | <img src="/chess-desktop.png" /> |
+
+### Mobile
+
+| Home Malhakuca                 | Modal Donate                    |
+| ------------------------------ | ------------------------------- |
+| <img src="/home-mobile.png" /> | <img src="/modal-mobile.png" /> |
+
+| Slide                           | Menu                           |
+| ------------------------------- | ------------------------------ |
+| <img src="/slide-mobile.png" /> | <img src="/menu-mobile.png" /> |
+
 ## 🖼️ License
 
 This project is licensed under the MIT license.
