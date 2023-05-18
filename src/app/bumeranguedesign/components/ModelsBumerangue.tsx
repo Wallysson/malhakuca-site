@@ -5,7 +5,6 @@ import { Text } from "@/app/components/Text";
 import Image from "next/image";
 import { BumerangueList } from "./BumerangueList";
 
-
 export function ModelsBumerangue() {
   const handleDownload = () => {
       const fileNames = [
