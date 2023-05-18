@@ -5,14 +5,15 @@ import { Text } from "@/app/components/Text";
 import Image from "next/image";
 import { BumerangueList } from "./BumerangueList";
 
+
 export function ModelsBumerangue() {
   const handleDownload = () => {
-    const fileNames = [
-      "boomerang_e_a4.pdf",
-      "boomerang_i_e_a42.pdf",
-      "boomerang_by-MM2.pdf",
-    ];
-
+      const fileNames = [
+        "boomerang_e_a4.pdf",
+        "boomerang_i_e_a42.pdf",
+        "boomerang_by-MM2.pdf",
+      ];
+  
     fileNames.forEach((fileName) => {
       const filePath = `/pdfs/${fileName}`;
       fetch(filePath)
@@ -20,25 +21,14 @@ export function ModelsBumerangue() {
           if (response.ok) {
             return response.blob();
           }
-          throw new Error("Download failed");
+          throw new Error('Download failed');
         })
         .then((blob) => {
           const url = URL.createObjectURL(blob);
-
-          // Verificar se o dispositivo é móvel
-          const isMobile = /iPhone|iPad|iPod|Android/i.test(
-            navigator.userAgent
-          );
-
-          if (isMobile) {
-            window.open(url, "_blank");
-          } else {
-            const downloadLink = document.createElement("a");
-            downloadLink.href = url;
-            downloadLink.download = fileName;
-            downloadLink.click();
-          }
-
+          const a = document.createElement('a');
+          a.href = url;
+          a.download = fileName;
+          a.click();
           URL.revokeObjectURL(url);
         })
         .catch((error) => {
