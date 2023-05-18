@@ -24,10 +24,21 @@ export function ModelsBumerangue() {
         })
         .then((blob) => {
           const url = URL.createObjectURL(blob);
-          const downloadLink = document.createElement("a");
-          downloadLink.href = url;
-          downloadLink.download = fileName;
-          downloadLink.click();
+
+          // Verificar se o dispositivo é móvel
+          const isMobile = /iPhone|iPad|iPod|Android/i.test(
+            navigator.userAgent
+          );
+
+          if (isMobile) {
+            window.open(url, "_blank");
+          } else {
+            const downloadLink = document.createElement("a");
+            downloadLink.href = url;
+            downloadLink.download = fileName;
+            downloadLink.click();
+          }
+
           URL.revokeObjectURL(url);
         })
         .catch((error) => {

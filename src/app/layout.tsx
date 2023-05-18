@@ -13,6 +13,8 @@ const inter = Inter({
 export const metadata = {
   title: "Malhakuca",
   description: "Bumerangue para vida",
+  keywords: ['malhakuca', 'bumerangue', 'projeto-social', 'doar'],
+  icons: '/logo-inam1.png',
 };
 
 export default function RootLayout({
