@@ -10,7 +10,7 @@ export function Guiness() {
         <div className="flex flex-col items-center justify-center gap-8 lg:max-w-2xl text-center ">
           <Image
             src="/guinness-logo.png"
-            alt="Figura"
+            alt="Logo do Guiness"
             width={180}
             height={140}
             className="md:w-[16.5rem] md:h-[13.125rem] "

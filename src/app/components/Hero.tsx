@@ -15,7 +15,7 @@ export function Hero() {
         <div className="flex flex-col w-full lg:flex-row justify-center items-center lg:order-2 lg:w-80">
           <img
             src="/mk1.png"
-            alt="Figura"
+            alt="Imagem com estilo de cavalo do xadrez com Sr. José e seus alunos."
             className="max-w-[9rem] max-h-44 md:max-w-[12.5rem] md:max-h-72 lg:max-w-[18.5rem] lg:max-h-[23.5rem] object-cover"
           />
         </div>
@@ -41,7 +41,7 @@ export function Hero() {
 
       <Image
         src="/figures.svg"
-        alt="Figura"
+        alt="Fundo laranja e azul no top direito em forma de arco."
         width={200}
         height={200}
         className="absolute top-0 right-0"

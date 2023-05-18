@@ -15,12 +15,12 @@ export function Hero() {
         <div className="flex flex-col w-full lg:flex-row justify-center items-center lg:order-2">
           <img
             src="hero-2.png"
-            alt="feature image 2"
+            alt="Foto do Sr. José com alunos em uma escola e uma xadrez em sua frente."
             className="w-full lg:max-w-xs md:hidden"
           />
           <img
             src="hero-2Tablet.png"
-            alt="feature image 2"
+            alt="Foto do Sr. José com alunos em uma escola e uma xadrez em sua frente."
             className="object-contain hidden md:block px-4"
           />
         </div>
@@ -46,7 +46,7 @@ export function Hero() {
 
       <Image
         src="/figures-2.svg"
-        alt="Figura"
+        alt="Figura reta laranja e azul no topo direito."
         width={200}
         height={200}
         className="absolute -top-14 right-4 md:w-80"

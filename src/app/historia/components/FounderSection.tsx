@@ -7,12 +7,12 @@ export default function FounderSection() {
         <div className="flex lg:order-2 ">
           <img
             src="founder-1.png"
-            alt="feature image 2"
+            alt="José Carlos ensinando a fazer bumerangue no INAM."
             className="w-full object-fit lg:max-w-xs md:hidden"
           />
           <img
             src="founder-1Tablet.png"
-            alt="feature image 2"
+            alt="José Carlos ensinando a fazer bumerangue no INAM."
             className="w-full object-fit lg:max-w-xs hidden md:block "
           />
         </div>
@@ -36,12 +36,12 @@ export default function FounderSection() {
         <div className="flex lg:order-2 ">
           <img
             src="founder-2.png"
-            alt="feature image 2"
+            alt="José Carlos ensinando a fazer bumerangue no INAM."
             className="w-full object-fit lg:max-w-xs md:hidden"
           />
           <img
             src="founder-2Tablet.png"
-            alt="feature image 2"
+            alt="José Carlos ensinando a fazer bumerangue no INAM."
             className="w-full object-fit lg:max-w-xs hidden md:block "
           />
         </div>

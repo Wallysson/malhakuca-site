@@ -26,24 +26,24 @@ export function Footer() {
             />
             <SocialMedia
               iconSrc="/facebook.svg"
-              alt="logo-facebook"
+              alt="Logo-facebook"
               description="Academiamalhakuca"
             />
             <SocialMedia
               iconSrc="/whatsapp.svg"
-              alt="logo-whatsapp"
+              alt="Logo-whatsapp"
               description="(12) 9 9622-8646"
             />
             <SocialMedia
               iconSrc="/email.svg"
-              alt="logo-email"
+              alt="Logo-email"
               description="jcklegal49@yahoo.com.br"
             />
           </div>
           <div className="mt-9">
             <SocialMedia
               iconSrc="/address.svg"
-              alt="logo-address"
+              alt="Logo-address"
               description="Rua Dom João V, n° 25 - subsolo - Parque dos Príncipes  CEP 12310-044 - Jacarei SP"
             />
           </div>

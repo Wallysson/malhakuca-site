@@ -93,7 +93,7 @@ export default function DonateModal({
               Abra o app em que vai fazer a transferência, escaneia a imagem ou
               cole o código de QR Code.
             </Text>
-            <img src="/qr-code.svg" alt="QR Code" className="w-48 h-48" />
+            <img src="/qr-code.svg" alt="QR Code para pagamento via Pix." className="w-48 h-48" />
             <div className="flex flex-col gap-4 text-start">
             <Button
               size="medium"

@@ -6,12 +6,12 @@ export function AboutBume() {
       <div className="flex lg:order-2 ">
         <img
           src="about-4.png"
-          alt="feature image 2"
+          alt="Sr. José ensiando crianças a manusear um bumerangue."
           className="w-full object-fit lg:max-w-xs md:hidden"
         />
         <img
           src="about-5.png"
-          alt="feature image 2"
+          alt="Sr. José ensiando crianças a manusear um bumerangue."
           className="w-full object-fit lg:max-w-xs hidden md:block "
         />
       </div>

@@ -27,7 +27,7 @@ const Navbar: React.FC = () => {
           </button>
           <a href="#">
             <div className="flex items-center justify-center gap-2">
-              <Image src="/logo-inam2.png" alt="Logo" width={32} height={24} />
+              <Image src="/logo-inam2.png" alt="Logo do Inam." width={32} height={24} />
               <Text size="h5-bold" variant="secondary">
                 INAM
               </Text>
@@ -78,7 +78,7 @@ const Navbar: React.FC = () => {
       )}
       <div className="md:flex items-center justify-between md:gap-4 lg:gap-14 hidden">
         <Link href="#">
-          <Image src="/logo-inam2.png" alt="Logo" width={72} height={56} />
+          <Image src="/logo-inam2.png" alt="Logo do Inam." width={72} height={56} />
         </Link>
         <Link href="/" className="hidden md:block text-white font-bold text-xl">
           <Text size="h4-bold">Início</Text>

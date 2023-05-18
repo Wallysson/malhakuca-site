@@ -13,7 +13,7 @@ export function Hero() {
         <div className="flex flex-col w-full lg:flex-row justify-center items-center lg:w-80">
           <Image
             src="/boolmerang.png"
-            alt="Figura"
+            alt="Figura de um bumerangue para section."
             width={80}
             height={80}
             className="md:w-[12.5rem] md:h-[12.75rem]"
@@ -36,7 +36,7 @@ export function Hero() {
 
       <Image
         src="/figures3.svg"
-        alt="Figura"
+        alt="Um bumerangue fazendo curva em um fundo laranja."
         width={120}
         height={100}
         className="absolute top-0 right-0"

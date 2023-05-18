@@ -9,21 +9,21 @@ export function About() {
         <div className="col-span-1 row-span-2 bg-red-50 w-full">
           <img
             src="about-1.png"
-            alt="feature image 2"
+            alt="José reunido com os participantes do INAM."
             className="w-full h-full object-fit lg:max-w-xs"
           />
         </div>
         <div>
           <img
             src="about-2.png"
-            alt="feature image 2 "
+            alt="Crianças reunidas no alpendre da casa do Sr. José que reuniam para aprender xadrez."
             className="w-full h-full object-fit lg:max-w-xs"
           />
         </div>
         <div>
           <img
             src="about-3.png"
-            alt="feature image 2"
+            alt="Torneio de xadrez feito por José."
             className="w-full h-full object-fit lg:max-w-xs"
           />
         </div>
