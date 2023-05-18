@@ -10,7 +10,7 @@ export function ModelsBumerangue() {
     const fileNames = [
       "boomerang_e_a4.pdf",
       "boomerang_i_e_a42.pdf",
-      "boomerang_by-MM2 (1).pdf",
+      "boomerang_by-MM2.pdf",
     ];
 
     fileNames.forEach((fileName) => {
