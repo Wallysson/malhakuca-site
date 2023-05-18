@@ -29,8 +29,8 @@ export function Hero() {
             Descobrindo o INAM
           </Text>
           <Text size="paragraph" variant="default">
-            O Instituo Acadêmico Malhakuca (INAM) é uma organização que vêm
-            fazendo a diferença ao lango dos anos.
+            O Instituo Acadêmico Malhakuca (INAM) é uma organização que vem
+            fazendo a diferença ao longo dos anos.
           </Text>
           <Link href="historia#slider">
             <Button
