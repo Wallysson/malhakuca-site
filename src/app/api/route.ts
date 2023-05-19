@@ -1,4 +1,3 @@
-import type { NextApiRequest, NextApiResponse } from "next";
 import { z } from "zod";
 import dotenv from "dotenv";
 import nodemailer from "nodemailer";

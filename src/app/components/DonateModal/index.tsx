@@ -18,12 +18,16 @@ type DonateModalProps = {
   showModal: boolean;
   setShowModal: React.Dispatch<React.SetStateAction<boolean>>;
   value: number;
+  codePix: string;
+  qrPix: string;
 };
 
 export default function DonateModal({
   showModal,
   setShowModal,
   value,
+  codePix,
+  qrPix
 }: DonateModalProps) {
   const [isCopping, setIsCopping] = useState(false);
 
@@ -44,10 +48,9 @@ export default function DonateModal({
       document.removeEventListener("keydown", handleKeyDown);
     };
   }, [showModal, setShowModal]);
-
   function handleCopyToClipboardQrCode() {
     setIsCopping(true);
-    navigator.clipboard.writeText("Copiei e Colei");
+    navigator.clipboard.writeText(codePix);
     toast.success("Código copiado para transferência.", {
       icon: "✍️",
       position: "top-right",
@@ -94,7 +97,7 @@ export default function DonateModal({
               cole o código de QR Code.
             </Text>
             <img
-              src="/qr-code.svg"
+              src={`/${qrPix}`}
               alt="QR Code para pagamento via Pix."
               className="w-48 h-48"
             />
@@ -108,23 +111,15 @@ export default function DonateModal({
               </Button>
               <div>
                 <span className="font-medium">Chave Pix: </span>
-                <span>chavepix@exemplo.com.br</span>
+                <span>(12) 99622-8846</span>
               </div>
               <div>
                 <span className="font-medium">Nome: </span>
                 <span>Instituto Malhakua</span>
               </div>
               <div>
-                <span className="font-medium">CPF: </span>
-                <span>123.456.789-00</span>
-              </div>
-              <div>
                 <span className="font-medium">Banco: </span>
-                <span>Banco do Brasil</span>
-              </div>
-              <div>
-                <span className="font-medium">Identificador: </span>
-                <span>1234567890</span>
+                <span>Banco Inter</span>
               </div>
               <Button
                 size="medium"
