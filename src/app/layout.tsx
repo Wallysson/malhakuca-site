@@ -15,6 +15,7 @@ export const metadata = {
   description: "Bumerangue para vida",
   keywords: ['malhakuca', 'bumerangue', 'projeto-social', 'doar'],
   icons: '/logo-inam1.png',
+  assets: '/logo-inam1.jpeg',
 };
 
 export default function RootLayout({

@@ -7,7 +7,7 @@ export function Footer() {
     <footer className="bg-neutral-900 py-14">
       <div className="container mx-auto px-4 flex flex-col items-center justify-center">
         <div className="flex flex-col items-center justify-center gap-4">
-          <Image src="/logo-inam1.png" alt="Logo" width={114} height={88} />
+          <Image src="/logo-inam1.jpeg" alt="Logo" width={114} height={88} />
           <Text size="h6-bold" variant="neutral">
             Instituto Acadêmico Malhakuca
           </Text>
