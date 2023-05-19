@@ -26,8 +26,8 @@ export function Goals() {
           />
           <Card
             title="Bumerangue de cartonado"
-            descriptionOne="Incentivo à prática recreativa e esportiva."
-            descriptionTwo="Aprimoramento da memória e concentração."
+            descriptionOne="Planificação e moldagem de peças."
+            descriptionTwo="Percepção estética,  bumeranguedesign."
           />
           <Card
             title="Atividades culturais"

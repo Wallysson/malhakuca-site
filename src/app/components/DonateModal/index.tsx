@@ -79,7 +79,7 @@ export default function DonateModal({
                     style: "currency",
                     currency: "BRL",
                   })}{" "}
-              para Instituto Malhakua
+              para Instituto Malhakuca
             </Text>
           </DialogTitle>
           <DialogClose
@@ -111,7 +111,7 @@ export default function DonateModal({
               </Button>
               <div>
                 <span className="font-medium">Chave Pix: </span>
-                <span>(12) 99622-8846</span>
+                <span>(12) 99622-8646</span>
               </div>
               <div>
                 <span className="font-medium">Nome: </span>
