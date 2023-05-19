@@ -38,23 +38,23 @@ O site em questão é um projeto beneficente que visa ajudar o Instituto Acadêm
 
 ### Web
 
-| Home Malhakuca                  | Modal Donate                     |
-| ------------------------------- | -------------------------------- |
-| <img src="/home-desktop.png" /> | <img src="/modal-desktop.png" /> |
+| Home Malhakuca                            | Modal Donate                               |
+| ----------------------------------------- | ------------------------------------------ |
+| <img src="src/assets/home-desktop.png" /> | <img src="src/assets/modal-desktop.png" /> |
 
-| Slide                            | Chess Section                    |
-| -------------------------------- | -------------------------------- |
-| <img src="/slide-desktop.png" /> | <img src="/chess-desktop.png" /> |
+| Slide                                      | Chess Section                              |
+| ------------------------------------------ | ------------------------------------------ |
+| <img src="src/assets/slide-desktop.png" /> | <img src="src/assets/chess-desktop.png" /> |
 
 ### Mobile
 
-| Home Malhakuca                 | Modal Donate                    |
-| ------------------------------ | ------------------------------- |
-| <img src="/home-mobile.png" /> | <img src="/modal-mobile.png" /> |
+| Home Malhakuca                           | Modal Donate                              |
+| ---------------------------------------- | ----------------------------------------- |
+| <img src="src/assets/home-mobile.png" /> | <img src="src/assets/modal-mobile.png" /> |
 
-| Slide                           | Menu                           |
-| ------------------------------- | ------------------------------ |
-| <img src="/slide-mobile.png" /> | <img src="/menu-mobile.png" /> |
+| Slide                                     | Menu                                     |
+| ----------------------------------------- | ---------------------------------------- |
+| <img src="src/assets/slide-mobile.png" /> | <img src="src/assets/menu-mobile.png" /> |
 
 ## 🖼️ License
 
